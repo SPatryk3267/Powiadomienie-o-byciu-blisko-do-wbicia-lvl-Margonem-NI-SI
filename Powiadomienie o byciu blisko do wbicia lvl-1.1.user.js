@@ -25,7 +25,7 @@ function checkExpPercent() {
         const expPrev = (lvl - 1) ** 4 + 10;
         const percent = ((exp - expPrev) / (expNext - expPrev)) * 100;
 
-        if (percent >= 0) {
+        if (percent >= 95) {
             message(`Uwaga! Masz ${percent.toFixed(2)}% doświadczenia!`);
         }
     }
